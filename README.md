@@ -21,7 +21,7 @@ I chose a **Doubly Linked List** to represent the stacks. Since the project requ
 Before parsing anything, the input data must be bulletproof. I built a validation layer that checks for:
 * Non-numeric parameters.
 * Duplicate integers.
-* Integer overflows and underflows ($>\text{INT\_MAX}$ or $<\text{INT\_MIN}$).
+* Integer overflows and underflows.
 
 The parser handles standard multiple arguments (`./push_swap 3 2 1`) as well as single-string quoted inputs (`./push_swap "3 2 1"`) by dynamically splitting strings using a customized pointer array handler (`free_split`).
 
